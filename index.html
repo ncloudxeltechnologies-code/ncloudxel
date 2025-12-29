@@ -6,62 +6,163 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <meta name="google-site-verification" content="f1TYw5nrwaogJp52W-HO2xkgEYmtb5gSk9vvEeI_8cE" />
 </head>
 <body>
 
 <!-- HEADER -->
-<header class="header">
-  <div class="container nav">
-    <div class="logo">ncloudxel <span>Technologies</span></div>
-    <nav>
+<!-- TOP CONTACT BAR -->
+<div class="top-bar">
+  <div class="container top-bar-inner">
+    <div class="top-left">
+      📧 info@ncloudxel.in
+      <span>|</span>
+      📍 India • Global Delivery
+    </div>
+    <div class="top-right">
+      Cloud • DevOps • Security • FinOps
+    </div>
+  </div>
+</div>
+
+<!-- MAIN HEADER -->
+<header class="premium-header">
+  <div class="container header-inner">
+
+    <div class="logo">
+      ncloudxel <span>Technologies</span>
+    </div>
+
+    <nav class="nav-links">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
+      <a href="industry.html" >Industries</a>
       <a href="case-studies.html">Case Studies</a>
+        <a href="careers.html">Careers</a>
       <a href="contact.html">Contact</a>
     </nav>
+
+    <a href="contact.html" class="header-cta">
+      Talk to an Expert
+    </a>
+
   </div>
 </header>
+
+
+<section class="trust-strip">
+  <div class="container trust-grid">
+
+    <div class="trust-item">
+      <h3 class="counter" data-target="10" data-suffix="+">0</h3>
+      <p>Years Experience</p>
+    </div>
+
+    <div class="trust-item">
+      <h3 class="counter" data-target="50" data-suffix="+">0</h3>
+      <p>Projects Delivered</p>
+    </div>
+
+    <div class="trust-item">
+      <h3 class="counter" data-target="99.9" data-suffix="%">0</h3>
+      <p>Uptime Achieved</p>
+    </div>
+
+    <div class="trust-item">
+      <h3 class="counter" data-target="30" data-suffix="%">0</h3>
+      <p>Avg Cost Optimization</p>
+    </div>
+
+  </div>
+</section>
+<section class="client-strip">
+  <div class="container">
+    <p class="client-strip-title">Trusted Cloud Platforms</p>
+
+    <div class="client-logos">
+      <img src="assets/images/aws.png" alt="AWS">
+      <img src="assets/images/Azure.svg" alt="Azure">
+      <img src="assets/images/gcp.png" alt="Google Cloud">
+      <img src="assets/images/Kubernetes.png" alt="Kubernetes">
+      <img src="assets/images/docker.jpg" alt="Docker">
+    </div>
+  </div>
+  <div class="logo-marquee">
+ 
+</div>
+
+</section>
+
 <!-- HERO -->
 <section class="hero hero-image">
   <div class="hero-content">
-    <h1>Cloud & DevOps Solutions</h1>
-    <p>Secure • Scalable • Cost-Optimized Cloud Engineering</p>
-    <a href="contact.html" class="btn-primary">Contact Us</a>
+    <h1>Build. Secure. Scale.</h1>
+    <p>
+      Cloud & DevOps engineering services that help businesses 
+      deploy faster, stay secure, and control cloud costs.
+    </p>
+    <div class="hero-actions">
+      <a href="contact.html" class="btn-primary">Talk to an Expert</a>
+      <a href="services.html" class="btn-secondary">View Services</a>
+    </div>
   </div>
 </section>
-
 <!-- EXPERTISE -->
 <section class="section light">
   <div class="container">
-    <h2 class="section-title">Our Expertise</h2>
+    <h2 class="section-title">Our Core Services</h2>
 
-    <!-- YEARS COUNTER -->
-    <div class="counter-box" style="text-align:center; margin-bottom:40px;">
-      <span id="years-counter">1</span>
-      <p>Years of Cloud & DevOps Expertise</p>
-    </div>
+    <div class="cards services-grid">
 
-    <div class="cards">
       <div class="card">
-        <h3>Cloud Consulting</h3>
-        <p>Architecture, migration & modernization</p>
+        <h3>Cloud & Datacenter Consulting</h3>
+        <p>
+          Design, migrate, and modernize infrastructure across AWS, Azure, GCP,
+          VMware, and OpenStack with scalability and security built in.
+        </p>
       </div>
 
       <div class="card">
-        <h3>DevSecOps</h3>
-        <p>CI/CD, security & automation</p>
+        <h3>DevOps & Platform Engineering</h3>
+        <p>
+          CI/CD pipelines, infrastructure as code, automation, and SRE practices
+          to accelerate software delivery with reliability.
+        </p>
       </div>
 
       <div class="card">
-        <h3>Kubernetes & EKS</h3>
-        <p>Scalable container platforms</p>
+        <h3>DevSecOps & Cloud Security</h3>
+        <p>
+          Shift-left security with secure pipelines, secrets management,
+          vulnerability scanning, and compliance automation.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Kubernetes & Containers</h3>
+        <p>
+          Enterprise-grade Kubernetes platforms, GitOps workflows, Helm charts,
+          and cost-optimized container orchestration.
+        </p>
       </div>
 
       <div class="card">
         <h3>FinOps & Cost Optimization</h3>
-        <p>Reduce cloud spend up to 30%</p>
+        <p>
+          Gain visibility, governance, and cost control across multi-cloud
+          environments to reduce unnecessary cloud spend.
+        </p>
       </div>
+
+      <div class="card">
+        <h3>Observability & Reliability</h3>
+        <p>
+          End-to-end monitoring, logging, and alerting using Prometheus, Grafana,
+          and ELK to ensure high availability.
+        </p>
+      </div>
+
     </div>
   </div>
 </section>
@@ -69,26 +170,38 @@
 <!-- WHY CHOOSE US -->
 <section class="section">
   <div class="container">
-    <h2 class="section-title">Why Choose Us</h2>
+    <h2 class="section-title">Why NCloudXel</h2>
 
     <div class="cards">
+
       <div class="card">
-        <h3>Experience</h3>
-        <p>Years of Industry Expertise</p>
+        <h3>Outcome-Driven Delivery</h3>
+        <p>
+          We focus on measurable results — faster deployments, reduced downtime,
+          and optimized cloud spend.
+        </p>
       </div>
 
       <div class="card">
-        <h3>Cost Optimization</h3>
-        <p>Maximize Cloud Savings</p>
+        <h3>Security by Design</h3>
+        <p>
+          Security and compliance are embedded into every architecture and
+          pipeline, not added later.
+        </p>
       </div>
 
       <div class="card">
-        <h3>Security Focused</h3>
-        <p>Secure & Compliant Solutions</p>
+        <h3>Long-Term Partnership</h3>
+        <p>
+          We work as an extension of your team, ensuring reliability,
+          transparency, and continuous improvement.
+        </p>
       </div>
+
     </div>
   </div>
 </section>
+
 <script>
   let count = 1;
   const maxYears = 10;
@@ -105,12 +218,179 @@
     }, 200);
   }
 </script>
+<!-- WhatsApp Floating Button -->
+<div class="whatsapp-wrapper">
+    <a href="https://wa.me/919311663343"
+       class="whatsapp-float"
+       target="_blank"
+       aria-label="Chat with us on WhatsApp">
+        <img src="assets/images/whatsapp.png" alt="WhatsApp">
+        <span class="whatsapp-tooltip">Chat with us</span>
+    </a>
+</div>
+<!-- Chatbot Button -->
+<div class="chatbot-container">
+    <div class="chatbot-toggle" onclick="toggleChatbot()">
+        💬
+    </div>
 
+    <div class="chatbot-box" id="chatbotBox">
+        <div class="chatbot-header">
+            NCloudXel Assistant
+            <span onclick="toggleChatbot()">✖</span>
+        </div>
+
+        <div class="chatbot-messages" id="chatMessages">
+            <div class="bot-msg">👋 Hi! How can we help you today?</div>
+        </div>
+
+        <div class="chatbot-input">
+            <input type="text" id="userInput" placeholder="Type your message..." />
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+</div>
+<script>
+function toggleChatbot() {
+    const box = document.getElementById("chatbotBox");
+    box.style.display = box.style.display === "flex" ? "none" : "flex";
+}
+
+function sendMessage() {
+    const input = document.getElementById("userInput");
+    const msg = input.value.trim();
+    if (!msg) return;
+
+    const chat = document.getElementById("chatMessages");
+
+    chat.innerHTML += `<div class="user-msg">${msg}</div>`;
+    input.value = "";
+
+    setTimeout(() => {
+        chat.innerHTML += `<div class="bot-msg">${getBotReply(msg)}</div>`;
+        chat.scrollTop = chat.scrollHeight;
+    }, 600);
+}
+
+function getBotReply(message) {
+    message = message.toLowerCase();
+
+    if (message.includes("service")) return "We provide Cloud, DevOps, DevSecOps, and Infrastructure solutions.";
+    if (message.includes("contact")) return "You can contact us via WhatsApp or the Contact page.";
+    if (message.includes("cloud")) return "We help with AWS, Azure, and GCP cloud solutions.";
+    if (message.includes("price")) return "Pricing depends on your requirements. Please contact us.";
+    if (message.includes("hello") || message.includes("hi")) return "Hello! 👋 How can I help you?";
+
+    return "Thanks for your message. Our team will get back to you soon.";
+}
+</script>
+<section class="cta-strip">
+  <div class="container">
+    <h2>Ready to Modernize Your Cloud?</h2>
+    <p>Let’s discuss your challenges and design the right solution.</p>
+  </div>
+</section>
 <!-- FOOTER -->
-<footer class="footer">
-  <p>© 2025 ncloudxel Technologies | <a href="privacy.html">Privacy Policy</a></p>
+<footer class="premium-footer">
+  <div class="container footer-grid">
+
+    <div>
+      <h3>ncloudxel Technologies</h3>
+      <p>
+        Cloud, DevOps, and security engineering services helping businesses
+        scale reliably and securely.
+      </p>
+    </div>
+
+    <div>
+      <h4>Services</h4>
+      <ul>
+        <li>Cloud & Datacenter</li>
+        <li>DevOps & Platform Engineering</li>
+        <li>DevSecOps & Security</li>
+        <li>Kubernetes & Containers</li>
+        <li>FinOps & Cost Optimization</li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Contact</h4>
+      <p>📧 info@ncloudxel.in</p>
+      <p>📍 LB-2,aastha plaza, Sector-5 Sahibabad,India(Serving Clients)</p>
+      <p>📞 +91 93116 63343</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2025 ncloudxel Technologies. All Rights Reserved.
+    <a href="privacy.html">Privacy Policy</a>
+  </div>
 </footer>
+
+<script>
+const counters = document.querySelectorAll('.counter');
+let counterStarted = false;
+
+function animateCounters() {
+  counters.forEach(counter => {
+    const target = parseFloat(counter.dataset.target);
+    const suffix = counter.dataset.suffix || '';
+    let count = 0;
+
+    const speed = target > 50 ? 20 : 40; // smoother for small numbers
+
+    const updateCount = () => {
+      count += target / 80;
+
+      if (count < target) {
+        counter.textContent = count.toFixed(target % 1 === 0 ? 0 : 1) + suffix;
+        requestAnimationFrame(updateCount);
+      } else {
+        counter.textContent = target + suffix;
+      }
+    };
+
+    updateCount();
+  });
+}
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting && !counterStarted) {
+      counterStarted = true;
+      animateCounters();
+    }
+  });
+}, { threshold: 0.4 });
+
+observer.observe(document.querySelector('.trust-strip'));
+</script>
+<script>
+const animated = document.querySelectorAll('.card, .section-title');
+
+const animObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.15 });
+
+animated.forEach(el => {
+  el.classList.add('fade-in');
+  animObserver.observe(el);
+});
+</script>
+<script>
+document.addEventListener('contextmenu', e => e.preventDefault());
+document.addEventListener('keydown', e => {
+  if (
+    e.key === 'F12' ||
+    (e.ctrlKey && ['u','s','c','p'].includes(e.key.toLowerCase()))
+  ) e.preventDefault();
+});
+</script>
 
 </body>
 </html>
-
