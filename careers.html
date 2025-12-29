@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Careers | ncloudxel Technologies</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="container top-bar-inner">
+    <div class="top-left">
+       📧 info@ncloudxel.in
+      <span>|</span>
+      📍 India • Global Delivery
+    </div>
+    <div class="top-right">
+      Cloud • DevOps • Security • FinOps
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="premium-header">
+  <div class="container header-inner">
+    <div class="logo">
+      ncloudxel <span>Technologies</span>
+    </div>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="industry.html">Industries</a>
+      <a href="case-studies.html">Case Studies</a>
+      <a href="careers.html">Careers</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <a href="contact.html" class="header-cta">
+      Talk to an Expert
+    </a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero hero-premium" style="height:30vh;">
+  <div class="hero-content">
+  <h1>Join Our Team</h1>
+  <p>We are always looking for passionate talent to grow with us.</p>
+  </div>
+</section>
+
+<!-- JOB OPENINGS -->
+<section class="section light">
+  <div class="container">
+    <h2 class="section-title">We Are Recruiting</h2>
+    <div class="cards careers-grid">
+
+      <div class="card">
+        <h3>AWS Architect</h3>
+        <p>Design and implement scalable, secure AWS infrastructure for clients.</p>
+      </div>
+
+      <div class="card">
+        <h3>AWS Engineer</h3>
+        <p>Deploy and maintain cloud infrastructure, automate processes, and ensure performance optimization.</p>
+      </div>
+
+      <div class="card">
+        <h3>Kubernetes Engineer</h3>
+        <p>Build and manage container orchestration platforms and CI/CD pipelines for scalable deployments.</p>
+      </div>
+
+      <div class="card">
+        <h3>Website Designer</h3>
+        <p>Create modern, responsive, and visually appealing websites that align with brand identity.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- APPLY CTA -->
+<section class="cta-strip premium-cta">
+  <div class="container">
+    <h2>Interested in Working with Us?</h2>
+    <p>Send your resume to <strong>contact@ncloudxel.in</strong></p>
+    <a href="mailto:contact@ncloudxel.in" class="btn-primary">Send Resume</a>
+  </div>
+</section>
+
+<!-- WhatsApp Floating Button -->
+<div class="whatsapp-wrapper">
+    <a href="https://wa.me/919311663343" class="whatsapp-float" target="_blank" aria-label="Chat with us on WhatsApp">
+        <img src="assets/images/whatsapp.png" alt="WhatsApp">
+        <span class="whatsapp-tooltip">Chat with us</span>
+    </a>
+</div>
+
+<!-- Chatbot Button -->
+<div class="chatbot-container">
+    <div class="chatbot-toggle" onclick="toggleChatbot()">💬</div>
+    <div class="chatbot-box" id="chatbotBox">
+        <div class="chatbot-header">NCloudXel Assistant <span onclick="toggleChatbot()">✖</span></div>
+        <div class="chatbot-messages" id="chatMessages">
+            <div class="bot-msg">👋 Hi! How can we help you today?</div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="userInput" placeholder="Type your message..." />
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="premium-footer">
+  <div class="container footer-grid">
+    <div>
+      <h3>ncloudxel Technologies</h3>
+      <p>Cloud, DevOps & security engineering partner helping businesses scale reliably and securely.</p>
+    </div>
+
+    <div>
+      <h4>Services</h4>
+      <ul>
+        <li>Cloud & Datacenter</li>
+        <li>DevOps & Platform Engineering</li>
+        <li>DevSecOps & Security</li>
+        <li>Kubernetes & Containers</li>
+        <li>FinOps & Cost Optimization</li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Contact</h4>
+      <p>📧 info@ncloudxel.in</p>
+      <p>📍 LB-2,aastha plaza, Sector-5 Sahibabad,India(Serving Clients)</p>
+      <p>📞 +91 93116 63343</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+      © 2025 ncloudxel Technologies. All Rights Reserved • <a href="privacy.html">Privacy Policy</a>
+  </div>
+</footer>
+
+<script>
+// Chatbot functions
+function toggleChatbot() {
+    const box = document.getElementById("chatbotBox");
+    box.style.display = box.style.display === "flex" ? "none" : "flex";
+}
+function sendMessage() {
+    const input = document.getElementById("userInput");
+    const msg = input.value.trim();
+    if (!msg) return;
+    const chat = document.getElementById("chatMessages");
+    chat.innerHTML += `<div class="user-msg">${msg}</div>`;
+    input.value = "";
+    setTimeout(() => {
+        chat.innerHTML += `<div class="bot-msg">Thanks for your message. Our team will get back to you soon.</div>`;
+        chat.scrollTop = chat.scrollHeight;
+    }, 600);
+}
+</script>
+<script>
+document.addEventListener('contextmenu', e => e.preventDefault());
+document.addEventListener('keydown', e => {
+  if (
+    e.key === 'F12' ||
+    (e.ctrlKey && ['u','s','c','p'].includes(e.key.toLowerCase()))
+  ) e.preventDefault();
+});
+</script>
+
+</body>
+</html>
