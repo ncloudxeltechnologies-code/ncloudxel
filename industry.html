@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Services | ncloudxel Technologies</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+
+<div class="top-bar">
+  <div class="container top-bar-inner">
+    <div class="top-left">
+    📧 info@ncloudxel.in
+      <span>|</span>
+      📍 India • Global Delivery
+    </div>
+    <div class="top-right">
+      Cloud • DevOps • Security • FinOps
+    </div>
+  </div>
+</div>
+
+<!-- MAIN HEADER -->
+<header class="premium-header">
+  <div class="container header-inner">
+
+    <div class="logo">
+      ncloudxel <span>Technologies</span>
+    </div>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="industry.html" class="active">Industries</a>
+      <a href="case-studies.html">Case Studies</a>
+           <a href="careers.html">Careers</a>
+      <a href="contact.html">Contact</a>
+     </nav>
+
+    <a href="contact.html" class="header-cta">
+      Talk to an Expert
+    </a>
+
+  </div>
+</header>
+
+<!-- ===== Hero Section ===== -->
+ <section class="hero hero-premium"  style="height:30vh;">
+  <div class="hero-content">
+    <h1>Industry we Serve</h1>
+  </div>
+</section>
+
+
+<!-- ===== Industry Section (same layout as services cards) ===== -->
+<section class="services-section">
+  <div class="container">
+
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-icon">💻</div>
+        <h3>IT & Software</h3>
+        <p>
+          Cloud migration, DevSecOps, CI/CD pipelines, and scalable
+          infrastructure for SaaS and software companies.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">💳</div>
+        <h3>Banking & Finance</h3>
+        <p>
+          Secure cloud architecture, compliance-ready deployments,
+          data protection, and disaster recovery solutions.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🏥</div>
+        <h3>Healthcare</h3>
+        <p>
+          HIPAA-ready cloud solutions, secure data storage,
+          high availability systems, and monitoring.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🛒</div>
+        <h3>E-Commerce</h3>
+        <p>
+          High-performance hosting, auto-scaling, cost optimization,
+          and traffic-ready cloud infrastructure.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🏭</div>
+        <h3>Manufacturing</h3>
+        <p>
+          Cloud-enabled ERP systems, monitoring, analytics,
+          and infrastructure modernization.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🎓</div>
+        <h3>Education</h3>
+        <p>
+          Secure LMS hosting, scalable platforms,
+          data backup, and performance optimization.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== CTA Section (Optional but matches services page) ===== -->
+<section class="cta-section">
+  <div class="cta-content">
+    <h2>Not Sure Which Cloud Solution Fits Your Industry?</h2>
+    <p>
+      Speak with our cloud and DevOps experts to design secure, scalable,
+      and cost-efficient solutions tailored to your business.
+    </p>
+    <a href="contact.html" class="cta-button">Talk to Our Experts</a>
+  </div>
+</section>
+<!-- WhatsApp Floating Button -->
+<div class="whatsapp-wrapper">
+    <a href="https://wa.me/919311663343"
+       class="whatsapp-float"
+       target="_blank"
+       aria-label="Chat with us on WhatsApp">
+        <img src="assets/images/whatsapp.png" alt="WhatsApp">
+        <span class="whatsapp-tooltip">Chat with us</span>
+    </a>
+</div>
+<!-- Chatbot Button -->
+<div class="chatbot-container">
+    <div class="chatbot-toggle" onclick="toggleChatbot()">
+        💬
+    </div>
+
+    <div class="chatbot-box" id="chatbotBox">
+        <div class="chatbot-header">
+            NCloudXel Assistant
+            <span onclick="toggleChatbot()">✖</span>
+        </div>
+
+        <div class="chatbot-messages" id="chatMessages">
+            <div class="bot-msg">👋 Hi! How can we help you today?</div>
+        </div>
+
+        <div class="chatbot-input">
+            <input type="text" id="userInput" placeholder="Type your message..." />
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+</div>
+<script>
+function toggleChatbot() {
+    const box = document.getElementById("chatbotBox");
+    box.style.display = box.style.display === "flex" ? "none" : "flex";
+}
+
+function sendMessage() {
+    const input = document.getElementById("userInput");
+    const msg = input.value.trim();
+    if (!msg) return;
+
+    const chat = document.getElementById("chatMessages");
+
+    chat.innerHTML += `<div class="user-msg">${msg}</div>`;
+    input.value = "";
+
+    setTimeout(() => {
+        chat.innerHTML += `<div class="bot-msg">${getBotReply(msg)}</div>`;
+        chat.scrollTop = chat.scrollHeight;
+    }, 600);
+}
+
+function getBotReply(message) {
+    message = message.toLowerCase();
+
+    if (message.includes("service")) return "We provide Cloud, DevOps, DevSecOps, and Infrastructure solutions.";
+    if (message.includes("contact")) return "You can contact us via WhatsApp or the Contact page.";
+    if (message.includes("cloud")) return "We help with AWS, Azure, and GCP cloud solutions.";
+    if (message.includes("price")) return "Pricing depends on your requirements. Please contact us.";
+    if (message.includes("hello") || message.includes("hi")) return "Hello! 👋 How can I help you?";
+
+    return "Thanks for your message. Our team will get back to you soon.";
+}
+</script>
+<script>
+document.addEventListener('contextmenu', e => e.preventDefault());
+document.addEventListener('keydown', e => {
+  if (
+    e.key === 'F12' ||
+    (e.ctrlKey && ['u','s','c','p'].includes(e.key.toLowerCase()))
+  ) e.preventDefault();
+});
+</script>
+
+<!-- ===== Footer (same as services.html) ===== -->
+
+<footer class="premium-footer">
+  <div class="container footer-grid">
+
+    <div class="footer-brand">
+      <h3>ncloudxel Technologies</h3>
+      <p>
+        Cloud, DevOps & security engineering partner helping businesses
+        build scalable, secure, and cost-efficient platforms.
+      </p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Services</h4>
+      <ul>
+        <li>Cloud & Datacenter</li>
+        <li>DevOps & Platform Engineering</li>
+        <li>DevSecOps & Security</li>
+        <li>Kubernetes & Containers</li>
+        <li>FinOps & Cost Optimization</li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>📧 info@ncloudxel.in</p>
+      <p>📍 LB-2,aastha plaza, Sector-5 Sahibabad,India(Serving Clients)</p>
+      <p>📞 +91 93116 63343</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+      © 2025 ncloudxel Technologies. All Rights Reserved. •
+    <a href="privacy.html">Privacy Policy</a>
+  </div>
+</footer>
+
+</body>
+</html>
