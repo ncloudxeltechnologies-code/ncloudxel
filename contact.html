@@ -8,85 +8,206 @@
 </head>
 <body>
 
-<!-- HEADER -->
-<header class="header">
-  <div class="container nav">
-    <div class="logo">ncloudxel <span>Technologies</span></div>
-    <nav>
+<div class="top-bar">
+  <div class="container top-bar-inner">
+    <div class="top-left">
+      📧 info@ncloudxel.in
+      <span>|</span>
+      📍 India • Global Delivery
+    </div>
+    <div class="top-right">
+      Cloud • DevOps • Security • FinOps
+    </div>
+  </div>
+</div>
+
+<!-- MAIN HEADER -->
+<header class="premium-header">
+  <div class="container header-inner">
+
+    <div class="logo">
+      ncloudxel <span>Technologies</span>
+    </div>
+
+    <nav class="nav-links">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
-        <a href="case-studies.html">Case Studies</a>
+      <a href="industry.html" class="active">Industries</a>
+      <a href="case-studies.html">Case Studies</a>
+           <a href="careers.html">Careers</a>
       <a href="contact.html">Contact</a>
     </nav>
+
+    <a href="contact.html" class="header-cta">
+      Talk to an Expert
+    </a>
+
   </div>
 </header>
-
-<!-- PAGE HERO -->
-<section class="hero" style="height:50vh;">
+<section class="hero hero-premium" style="height:30vh;">
   <div class="hero-content">
-    <h1>Contact Us</h1>
-    <p>Let’s discuss your cloud and DevOps needs</p>
+    <h1>Connect With Us</h1>
+    <p>Get in touch with us today by filling out the form to discuss your
+        business requirements. Our experts will guide you to the ideal
+        pricing solution</p>
   </div>
 </section>
 
 <!-- CONTACT INFO -->
+<!-- CONTACT + PRICING SECTION -->
 <section class="section light">
-  <div class="container">
-    <h2 class="section-title">Get in Touch</h2>
+  <div class="container contact-layout">
 
-    <div class="cards">
-      <div class="card">
-        <h3>Email</h3>
-        <p>info@ncloudxel.in</p>
-         <a href="https://wa.me/91XXXXXXXXXX" target="_blank">
-  Chat with us on WhatsApp
-</a>
-
+    <!-- LEFT CONTENT -->
+    <div class="contact-left">
+      <h2 class="gradient-text">Connect With Us</h2>
+      <div class="contact-image-wrap">
+     <img src="assets/images/contact-team.jpg.png" alt="Cloud Consulting Team">
       </div>
 
-      <div class="card">
-        <h3>Location</h3>
-        <p>LB-2,Aastha plaza , Sector 5 , Sahibabad,India</p>
-        <p>India</p>
-      </div>
 
-      <div class="card">
-        <h3>Business Hours</h3>
-        <p>Monday – Friday<br>9:00 AM – 6:00 PM</p>
+      <div class="contact-points">
+        <p>✔ 24/7 Customer Assistance</p>
+        <p>✔ Customised Cloud Solutions</p>
+        <p>✔ Scalable Infrastructure</p>
+        <p>✔ Accelerated Deployment</p>
       </div>
     </div>
+
+    <!-- RIGHT FORM -->
+    <div class="contact-right">
+      <h2 class="gradient-text center">Request for Pricing</h2>
+
+      <form class="pricing-form" action="https://formspree.io/f/xojqwypy" method="POST">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <input type="tel" name="phone" placeholder="Phone Number">
+        <input type="text" name="country" placeholder="Country">
+        <input type="text" name="company" placeholder="Company Name">
+
+        <button type="submit" class="btn-primary full">Submit</button>
+         <div class="formspree-recaptcha"></div>
+      </form>
+    </div>
+
   </div>
 </section>
 
+
 <!-- CONTACT FORM -->
 <section class="section">
-  <div class="container">
-    <h2 class="section-title">Send Us a Message</h2>
+<script>
+function toggleChatbot() {
+    const box = document.getElementById("chatbotBox");
+    box.style.display = box.style.display === "flex" ? "none" : "flex";
+}
 
-    <!-- Static form (GitHub Pages compatible) -->
-    <form class="contact-form" action="https://formspree.io/f/yourformid" method="POST">
-      <div class="cards">
-        <div class="card">
-          <input type="text" name="name" placeholder="Your Name" required>
+function sendMessage() {
+    const input = document.getElementById("userInput");
+    const msg = input.value.trim();
+    if (!msg) return;
+
+    const chat = document.getElementById("chatMessages");
+
+    chat.innerHTML += `<div class="user-msg">${msg}</div>`;
+    input.value = "";
+
+    setTimeout(() => {
+        chat.innerHTML += `<div class="bot-msg">${getBotReply(msg)}</div>`;
+        chat.scrollTop = chat.scrollHeight;
+    }, 600);
+}
+
+function getBotReply(message) {
+    message = message.toLowerCase();
+
+    if (message.includes("service")) return "We provide Cloud, DevOps, DevSecOps, and Infrastructure solutions.";
+    if (message.includes("contact")) return "You can contact us via WhatsApp or the Contact page.";
+    if (message.includes("cloud")) return "We help with AWS, Azure, and GCP cloud solutions.";
+    if (message.includes("price")) return "Pricing depends on your requirements. Please contact us.";
+    if (message.includes("hello") || message.includes("hi")) return "Hello! 👋 How can I help you?";
+
+    return "Thanks for your message. Our team will get back to you soon.";
+}
+</script>
+<script>
+document.addEventListener('contextmenu', e => e.preventDefault());
+document.addEventListener('keydown', e => {
+  if (
+    e.key === 'F12' ||
+    (e.ctrlKey && ['u','s','c','p'].includes(e.key.toLowerCase()))
+  ) e.preventDefault();
+});
+</script>
+
+<!-- WhatsApp Floating Button -->
+<div class="whatsapp-wrapper">
+    <a href="https://wa.me/919311663343"
+       class="whatsapp-float"
+       target="_blank"
+       aria-label="Chat with us on WhatsApp">
+        <img src="assets/images/whatsapp.png" alt="WhatsApp">
+        <span class="whatsapp-tooltip">Chat with us</span>
+    </a>
+</div>
+<!-- Chatbot Button -->
+<div class="chatbot-container">
+    <div class="chatbot-toggle" onclick="toggleChatbot()">
+        💬
+    </div>
+
+    <div class="chatbot-box" id="chatbotBox">
+        <div class="chatbot-header">
+            NCloudXel Assistant
+            <span onclick="toggleChatbot()">✖</span>
         </div>
 
-        <div class="card">
-          <input type="email" name="email" placeholder="Your Email" required>
+        <div class="chatbot-messages" id="chatMessages">
+            <div class="bot-msg">👋 Hi! How can we help you today?</div>
         </div>
 
-        <div class="card" style="grid-column: 1 / -1;">
-          <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+        <div class="chatbot-input">
+            <input type="text" id="userInput" placeholder="Type your message..." />
+            <button onclick="sendMessage()">Send</button>
         </div>
-      </div>
+    </div>
+</div>
 
-      <div style="text-align:center; margin-top:20px;">
-  
-<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<footer class="premium-footer">
+  <div class="container footer-grid">
 
-<button
-  class="btn-primary"
-  onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ncloudxel/30min'});return false;">
-  Schedule an Appointment
-</button>
-      </body>
+    <div class="footer-brand">
+      <h3>ncloudxel Technologies</h3>
+      <p>
+        Cloud, DevOps & security engineering partner helping businesses
+        build scalable, secure, and cost-efficient platforms.
+      </p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Services</h4>
+      <ul>
+        <li>Cloud & Datacenter</li>
+        <li>DevOps & Platform Engineering</li>
+        <li>DevSecOps & Security</li>
+        <li>Kubernetes & Containers</li>
+        <li>FinOps & Cost Optimization</li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>📧 info@ncloudxel.in</p>
+      <p>📍 LB-2,aastha plaza, Sector-5 Sahibabad,India(Serving Clients)</p>
+      <p>📞 +91 93116 63343</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+      © 2025 ncloudxel Technologies. All Rights Reserved•
+    <a href="privacy.html">Privacy Policy</a>
+  </div>
+</footer>
+</body>
