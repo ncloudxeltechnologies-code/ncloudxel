@@ -1098,3 +1098,179 @@ img {
     flex-direction: column;
   }
 }
+.site-logo {
+  height: 44px;          /* adjust if needed */
+  width: auto;
+  display: block;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+}
+.header-inner {
+  display: flex;
+  align-items: center;        /* vertical alignment */
+  justify-content: space-between;
+  min-height: 80px;           /* premium header height */
+}
+/* =========================
+   LOGO – FINAL OVERRIDE
+   ========================= */
+
+/* Header height */
+.premium-header {
+  min-height: 120px;
+}
+
+.header-inner {
+  min-height: 120px;
+  align-items: center;
+}
+
+/* Logo container */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+/* Logo link */
+.logo a {
+  display: flex;
+  align-items: center;
+}
+
+/* LOGO IMAGE (AUTHORITATIVE RULE) */
+.site-logo {
+  height: 80px;      /* ✅ BIG desktop logo */
+  width: auto;
+  max-height: none;
+  max-width: none;
+  display: block;
+}
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+  .premium-header {
+    min-height: 90px;
+  }
+
+  .site-logo {
+    height: 56px;
+  }
+}
+.site-logo { height: 150px; }
+/* =========================
+   FORCE LOGO SIZE – FINAL FIX
+   ========================= */
+
+.premium-header,
+.site-header {
+  min-height: 150px !important;
+}
+
+.header-inner,
+.header-container,
+.nav {
+  min-height: 150px !important;
+  align-items: center !important;
+}
+
+/* Kill all previous logo limits */
+.logo img,
+.site-logo {
+  height: 150px !important;   /* 👈 FORCE */
+  width: auto !important;
+  max-height: none !important;
+  max-width: none !important;
+  display: block !important;
+}
+.top-bar .top-bar-inner {
+    justify-content: flex-start; /* aligns child items to left */
+    padding-left: 0;             /* remove container padding */
+}
+
+
+.hero-content {
+    text-align: auto; /* aligns text left */
+    margin-left: 10;   /* remove extra margin */
+}
+.container {
+    margin-left: 10 !important;
+    margin-right: auto;
+    padding-left: 0;
+}
+.footer-logo {
+    width: 180px; /* adjust width as needed */
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+
+
+/* Hover effect */
+.cta-strip.premium-cta .btn-primary:hover {
+  background-color: transparent;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+body {
+  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+  background-color: #f8fafc;
+  color: #1f2937;
+  line-height: 1.7;
+}
+
+.section {
+  padding: 80px 0;   /* premium vertical spacing */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.who-we-are {
+  background-color: #ffffff;
+}
+
+.who-card {
+  background: #ffffff;
+  padding: 60px;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.who-card h2 {
+  font-size: 2.4rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.who-card p {
+  font-size: 1.05rem;
+  margin-bottom: 20px;
+  color: #374151;
+}
+.mission-vision .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+}
+
+.mission-vision .card {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+}
+
+.mission-vision .icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
