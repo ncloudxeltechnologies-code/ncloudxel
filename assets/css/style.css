@@ -1324,3 +1324,24 @@ body {
   margin-bottom: 6px;
   line-height: 1.6;
 }
+.whatsapp-wrapper {
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  z-index: 999;
+}
+
+.chatbot-container {
+  position: fixed;
+  bottom: 90px;
+  right: 15px;
+  z-index: 998;
+}
+
+@media (max-width: 768px) {
+  .chatbot-box {
+    width: 90vw;
+    right: 5vw;
+  }
+}
+
