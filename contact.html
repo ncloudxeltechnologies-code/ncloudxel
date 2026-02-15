@@ -2,194 +2,177 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Contact Us | ncloudxel Technologies</title>
+  <title>Contact | ncloudxel Technologies</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-<!-- HEADER -->
-<!-- TOP CONTACT BAR -->
+<!-- TOP BAR -->
 <div class="top-bar">
   <div class="container top-bar-inner">
     <div class="top-left">
-      📧 info@ncloudxel.in
+      info@ncloudxel.in
       <span>|</span>
-      📍 India • Global Delivery
+      India • Global Delivery
     </div>
     <div class="top-right">
-      Cloud • DevOps • Security • FinOps
+      Cloud Architecture • DevOps • DevSecOps • FinOps
     </div>
   </div>
 </div>
-<div class="mobile-top-info">
-   <a href="mailto:info@ncloudxel.in">📧 info@ncloudxel.in</a><br>
-  📍 India • Global Delivery<br>
-</div>
 
-<!-- MAIN HEADER -->
+<!-- HEADER -->
 <header class="premium-header">
   <div class="container header-inner">
 
-<div class="logo">
-  <a href="index.html">
-    <img src="assets/images/ncloudxel-logo.png"
-         alt="ncloudxel Technologies"
-         class="site-logo">
-  </a>
-</div>
+    <div class="logo">
+      <a href="index.html">
+        <img src="assets/images/ncloudxel-logo.png"
+             alt="ncloudxel Technologies"
+             class="site-logo">
+      </a>
+    </div>
 
     <nav class="nav-links">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
-      <a href="industry.html" class="active">Industries</a>
+      <a href="industry.html">Industries</a>
       <a href="case-studies.html">Case Studies</a>
-           <a href="careers.html">Careers</a>
-      <a href="contact.html">Contact</a>
+      <a href="careers.html">Careers</a>
+      <a href="contact.html" class="active">Contact</a>
     </nav>
 
     <a href="contact.html" class="header-cta">
-      Talk to an Expert
+      Request Consultation
     </a>
 
   </div>
 </header>
-<section class="hero hero-premium" style="height:30vh;">
+
+<!-- HERO SECTION -->
+<section class="hero hero-premium" style="height:35vh;">
   <div class="hero-content">
-    <h1>Connect With Us</h1>
-    <p>Get in touch with us today by filling out the form to discuss your
-        business requirements. Our experts will guide you to the ideal
-        pricing solution</p>
+    <h1>Engage With Our Cloud Architecture Team</h1>
+    <p>
+      Partner with ncloudxel to design secure, scalable, and cost-efficient
+      cloud environments tailored to your business objectives.
+    </p>
   </div>
 </section>
 
-<!-- CONTACT INFO -->
-<!-- CONTACT + PRICING SECTION -->
+<!-- CONTACT SECTION -->
 <section class="section light">
   <div class="container contact-layout">
 
     <!-- LEFT CONTENT -->
     <div class="contact-left">
-     <div class="contact-image-wrap">
-     <img src="assets/images/contact.png" alt="Cloud Consulting Team">
+
+      <h2>Why Work With ncloudxel?</h2>
+
+      <p>
+        We help enterprises and growth-stage companies modernize their
+        infrastructure with architecture-led cloud transformation strategies.
+      </p>
+
+      <div class="trust-metrics">
+        <div>
+          <strong>16+</strong>
+          <span>Years of Experience</span>
+        </div>
+
+        <div>
+          <strong>30+</strong>
+          <span>Projects Delivered</span>
+        </div>
+
+        <div>
+          <strong>99.9%</strong>
+          <span>Infrastructure Uptime</span>
+        </div>
+
+        <div>
+          <strong>30%</strong>
+          <span>Average Cost Optimization</span>
+        </div>
       </div>
 
-
-      <div class="contact-points">
-        <p>✔ 24/7 Customer Assistance</p>
-        <p>✔ Customised Cloud Solutions</p>
-        <p>✔ Scalable Infrastructure</p>
-        <p>✔ Accelerated Deployment</p>
+      <div class="direct-contact">
+        <p><strong>Email:</strong> info@ncloudxel.in</p>
+        <p><strong>Phone:</strong> +91 93116 63343</p>
       </div>
+
     </div>
 
     <!-- RIGHT FORM -->
     <div class="contact-right">
-      <h2 class="gradient-text center">Request for Pricing</h2>
 
-      <form class="pricing-form" action="https://formspree.io/f/xojqwypy" method="POST">
-        <input type="text" name="name" placeholder="Full Name" required>
-        <input type="email" name="email" placeholder="Email Address" required>
-        <input type="tel" name="phone" placeholder="Phone Number">
-        <input type="text" name="country" placeholder="Country">
-        <input type="text" name="company" placeholder="Company Name">
+      <h2>Request Consultation</h2>
 
-        <button type="submit" class="btn-primary full">Submit</button>
-         <div class="formspree-recaptcha"></div>
+      <form class="pricing-form"
+            action="https://formspree.io/f/xojqwypy"
+            method="POST">
+
+        <input type="text" name="name"
+               placeholder="Full Name"
+               required>
+
+        <input type="email" name="email"
+               placeholder="Business Email"
+               required>
+
+        <input type="text" name="company"
+               placeholder="Company Name"
+               required>
+
+        <input type="text" name="country"
+               placeholder="Country">
+
+        <textarea name="requirements"
+                  placeholder="Briefly describe your cloud or infrastructure requirements"
+                  rows="4"
+                  required></textarea>
+
+        <button type="submit"
+                class="btn-primary full">
+          Speak to an Architect
+        </button>
+
       </form>
+
     </div>
 
   </div>
 </section>
 
-
-<!-- CONTACT FORM -->
-<section class="section">
-<script>
-function toggleChatbot() {
-    const box = document.getElementById("chatbotBox");
-    box.style.display = box.style.display === "flex" ? "none" : "flex";
-}
-
-function sendMessage() {
-    const input = document.getElementById("userInput");
-    const msg = input.value.trim();
-    if (!msg) return;
-
-    const chat = document.getElementById("chatMessages");
-
-    chat.innerHTML += `<div class="user-msg">${msg}</div>`;
-    input.value = "";
-
-    setTimeout(() => {
-        chat.innerHTML += `<div class="bot-msg">${getBotReply(msg)}</div>`;
-        chat.scrollTop = chat.scrollHeight;
-    }, 600);
-}
-
-function getBotReply(message) {
-    message = message.toLowerCase();
-
-    if (message.includes("service")) return "We provide Cloud, DevOps, DevSecOps, and Infrastructure solutions.";
-    if (message.includes("contact")) return "You can contact us via WhatsApp or the Contact page.";
-    if (message.includes("cloud")) return "We help with AWS, Azure, and GCP cloud solutions.";
-    if (message.includes("price")) return "Pricing depends on your requirements. Please contact us.";
-    if (message.includes("hello") || message.includes("hi")) return "Hello! 👋 How can I help you?";
-
-    return "Thanks for your message. Our team will get back to you soon.";
-}
-</script>
-<script>
-</script>
-
-<!-- WhatsApp Floating Button -->
+<!-- WHATSAPP FLOAT -->
 <div class="whatsapp-wrapper">
-    <a href="https://wa.me/919311663343"
-       class="whatsapp-float"
-       target="_blank"
-       aria-label="Chat with us on WhatsApp">
-        <img src="assets/images/whatsapp.png" alt="WhatsApp">
-        <span class="whatsapp-tooltip">Chat with us</span>
-    </a>
-</div>
-<!-- Chatbot Button -->
-<div class="chatbot-container">
-    <div class="chatbot-toggle" onclick="toggleChatbot()">
-        💬
-    </div>
-
-    <div class="chatbot-box" id="chatbotBox">
-        <div class="chatbot-header">
-            NCloudXel Assistant
-            <span onclick="toggleChatbot()">✖</span>
-        </div>
-
-        <div class="chatbot-messages" id="chatMessages">
-            <div class="bot-msg">👋 Hi! How can we help you today?</div>
-        </div>
-
-        <div class="chatbot-input">
-            <input type="text" id="userInput" placeholder="Type your message..." />
-            <button onclick="sendMessage()">Send</button>
-        </div>
-    </div>
+  <a href="https://wa.me/919311663343"
+     class="whatsapp-float"
+     target="_blank"
+     aria-label="Chat with us on WhatsApp">
+      <img src="assets/images/whatsapp.png"
+           alt="WhatsApp">
+  </a>
 </div>
 
+<!-- FOOTER -->
 <footer class="premium-footer">
   <div class="container footer-grid">
 
-<div>
-  <a href="index.html">
-    <img src="assets/images/Footer.png" 
-         alt="ncloudxel Technologies" 
-         class="footer-logo">
-  </a>
-  <p>
-    Cloud, DevOps, and security engineering services helping businesses
-    scale reliably and securely.
-  </p>
-</div>
+    <div>
+      <a href="index.html">
+        <img src="assets/images/Footer.png"
+             alt="ncloudxel Technologies"
+             class="footer-logo">
+      </a>
+      <p>
+        Cloud architecture, DevOps, security engineering,
+        and infrastructure optimization services for
+        modern enterprises.
+      </p>
+    </div>
 
     <div class="footer-links">
       <h4>Services</h4>
@@ -204,18 +187,18 @@ function getBotReply(message) {
 
     <div class="footer-contact">
       <h4>Contact</h4>
-      <p>📧 info@ncloudxel.in</p>
-      <p>📍 LB-2,aastha plaza, Sector-5 Sahibabad,India(Serving Clients)</p>
-      <p>📞 +91 93116 63343</p>
+      <p>info@ncloudxel.in</p>
+      <p>LB-2, Aastha Plaza, Sector-5, Sahibabad, India</p>
+      <p>+91 93116 63343</p>
     </div>
 
   </div>
 
   <div class="footer-bottom">
-      © 2025 ncloudxel TECHNOLOGIES. All Rights Reserved•
+    © 2026 ncloudxel Technologies. All Rights Reserved |
     <a href="privacy.html">Privacy Policy</a>
   </div>
 </footer>
+
 </body>
-
-
+</html>
