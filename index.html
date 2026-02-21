@@ -120,7 +120,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- HERO -->
 <section class="hero hero-image">
   <div class="hero-content">
-    <h1>Build Fast. Scale Securely.</h1>
+    <h1>
+  Build Fast.
+  <span id="rotating-text"></span>
+</h1>
     <p>
       ncloudxel is a premium cloud and DevSecOps partner for startups and growth-stage companies.
       We design, secure, and scale AWS and Kubernetes platforms with production-grade reliability,
@@ -450,9 +453,34 @@ document.addEventListener('keydown', e => {
   ) e.preventDefault();
 });
 </script>
+<script>
+const phrases = [
+  "Scale Securely.",
+  "Deploy Faster.",
+  "Optimize Cloud Costs.",
+  "Automate Everything.",
+  "Secure by Design."
+];
 
+let i = 0;
+const rotatingText = document.getElementById("rotating-text");
+
+function changeText() {
+  rotatingText.style.opacity = 0;
+
+  setTimeout(() => {
+    rotatingText.textContent = phrases[i];
+    rotatingText.style.opacity = 1;
+    i = (i + 1) % phrases.length;
+  }, 400);
+}
+
+rotatingText.textContent = phrases[0];
+setInterval(changeText, 2500);
+</script>
 </body>
 </html>
+
 
 
 
