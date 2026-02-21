@@ -166,6 +166,10 @@ body {
   font-size: 22px;
   font-weight: bold;
 }
+#rotating-text {
+  color: #00c3ff;
+  transition: opacity 0.4s ease;
+}
 
 .logo span {
   font-weight: normal;
@@ -1821,3 +1825,4 @@ html, body {
   line-height: 1.6;
   color: #444;
 }
+
