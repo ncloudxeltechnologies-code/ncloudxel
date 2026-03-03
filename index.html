@@ -344,56 +344,16 @@ const observer = new IntersectionObserver(entries => {
 
 observer.observe(document.querySelector('.trust-strip'));
 </script>
+
 <script>
-const animated = document.querySelectorAll('.card, .section-title');
-
-const animObserver = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-    }
-  });
-}, { threshold: 0.15 });
-
-animated.forEach(el => {
-  el.classList.add('fade-in');
-  animObserver.observe(el);
+document.addEventListener('contextmenu', e => e.preventDefault());
+document.addEventListener('keydown', e => {
+  if (
+    e.key === 'F12' ||
+    (e.ctrlKey && ['u','s','c','p'].includes(e.key.toLowerCase()))
+  ) e.preventDefault();
 });
-</script>
-<script>
-
-</script>
-<script>
-const phrases = [
-  "Scale Securely.",
-  "Deploy Faster.",
-  "Optimize Cloud Costs.",
-  "Automate Everything.",
-  "Secure by Design."
-];
-
-let i = 0;
-const rotatingText = document.getElementById("rotating-text");
-
-function changeText() {
-  rotatingText.style.opacity = 0;
-
-  setTimeout(() => {
-    rotatingText.textContent = phrases[i];
-    rotatingText.style.opacity = 1;
-    i = (i + 1) % phrases.length;
-  }, 400);
-}
-
-rotatingText.textContent = phrases[0];
-setInterval(changeText, 2500);
-</script>
-<script>
-  window.addEventListener("scroll", function () {
-    const header = document.querySelector(".premium-header");
-    header.classList.toggle("scrolled", window.scrollY > 50);
-  });
-    const toggle = document.querySelector(".nav-toggle");
+  const toggle = document.querySelector(".nav-toggle");
 const nav = document.querySelector(".nav-links");
 
 if (toggle) {
@@ -402,7 +362,6 @@ if (toggle) {
   });
 }
 </script>
-<script>
 function toggleMenu() {
   document.getElementById("mobileMenu").classList.toggle("active");
 }
@@ -420,6 +379,8 @@ document.querySelectorAll(".nav-menu a").forEach(link => {
   });
 });
 </script>
+
+
 </body>
 </html>
 
