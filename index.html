@@ -427,24 +427,7 @@ document.querySelectorAll(".nav-menu a").forEach(link => {
     menu.classList.remove("active");
   });
 });
-</script>
-      <script>
-document.addEventListener('contextmenu', e => e.preventDefault());
-document.addEventListener('keydown', e => {
-  if (
-    e.key === 'F12' ||
-    (e.ctrlKey && ['u','s','c','p'].includes(e.key.toLowerCase()))
-  ) e.preventDefault();
-});
-  const toggle = document.querySelector(".nav-toggle");
-const nav = document.querySelector(".nav-links");
 
-if (toggle) {
-  toggle.addEventListener("click", () => {
-    nav.classList.toggle("active");
-  });
-}
-</script>
 </body>
 </html>
 
