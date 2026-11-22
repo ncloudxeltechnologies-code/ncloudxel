@@ -1,0 +1,93 @@
+/* FinOps page styles. Loaded after assets/css/style.css.
+   All selectors are prefixed fp- to minimize impact on other site pages. */
+html { scroll-behavior: smooth; scroll-padding-top: 110px; }
+.fp-section { padding: 76px 0; color: #e8edf7; background: #0a0f1c; }
+.fp-section-alt { background: #0e1627; border-top: 1px solid rgba(148,163,184,.10); border-bottom: 1px solid rgba(148,163,184,.10); }
+.fp-existing-hero { overflow: hidden; }
+.fp-existing-hero img { display: block; max-width: 100%; }
+.fp-heading { max-width: 850px; margin: 0 auto; text-align: center; }
+.fp-eyebrow { display: inline-block; margin-bottom: 10px; color: #78a6ff; font-size: 10px; font-weight: 800; letter-spacing: 1.8px; text-transform: uppercase; }
+.fp-heading h1 { margin: 0 0 14px; color: #f5f7fb; font-size: clamp(30px, 4.5vw, 45px); line-height: 1.15; letter-spacing: -1.4px; }
+.fp-subtitle { max-width: 760px; margin: 0 auto 13px; color: #c5d0e0; font-size: 17px; line-height: 1.6; }
+.fp-intro-copy { max-width: 800px; margin: 0 auto; color: #aab6c9; font-size: 13px; line-height: 1.85; }
+.fp-section-nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin: 30px auto 0; }
+.fp-section-nav a { display: inline-flex; align-items: center; justify-content: center; min-height: 42px; padding: 0 17px; border: 1px solid rgba(79,140,255,.38); border-radius: 8px; color: #eaf1ff; background: rgba(37,99,235,.14); font-size: 11px; font-weight: 700; text-decoration: none; transition: background .2s ease, transform .2s ease; }
+.fp-section-nav a:hover, .fp-section-nav a:focus-visible { background: #245fe0; transform: translateY(-2px); }
+.fp-value-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 25px; margin-top: 24px; color: #aebbd0; font-size: 11px; }
+.fp-tick { margin-right: 5px; color: #52d6a0; font-weight: 800; }
+.fp-section-heading { max-width: 720px; margin: 0 auto 38px; text-align: center; }
+.fp-section-heading h2 { margin: 0 0 12px; color: #f4f7fc; font-size: clamp(27px, 3.8vw, 37px); line-height: 1.2; letter-spacing: -1px; }
+.fp-section-heading p { margin: 0; color: #aab6c9; font-size: 13px; line-height: 1.8; }
+.fp-approach-grid { display: grid; grid-template-columns: repeat(5, minmax(0,1fr)); gap: 13px; }
+.fp-card { border: 1px solid rgba(148,163,184,.17); border-radius: 15px; background: linear-gradient(155deg, #14213a, #101a2d); }
+.fp-approach-card { min-height: 190px; padding: 20px 17px; }
+.fp-step-badge { display: inline-grid; place-items: center; width: 38px; height: 38px; margin-bottom: 17px; border: 1px solid rgba(79,140,255,.3); border-radius: 10px; color: #8db4ff; background: rgba(79,140,255,.12); font-size: 11px; font-weight: 800; }
+.fp-approach-card h3, .fp-metric-card h3 { margin: 0 0 8px; color: #f0f4fb; font-size: 15px; }
+.fp-approach-card p, .fp-metric-card p { margin: 0; color: #aab6c9; font-size: 11px; line-height: 1.75; }
+.fp-note { margin-top: 22px; padding: 16px 19px; border: 1px solid rgba(79,140,255,.23); border-radius: 11px; color: #c2cee0; background: rgba(37,99,235,.08); font-size: 12px; line-height: 1.7; }
+.fp-note strong { color: #f0f5ff; }
+.fp-package-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); align-items: stretch; gap: 17px; }
+.fp-package-card { position: relative; display: flex; flex-direction: column; padding: 25px 23px; }
+.fp-package-featured { border-color: rgba(79,140,255,.65); box-shadow: 0 14px 40px rgba(20,75,190,.13); }
+.fp-featured-tag { position: absolute; top: -11px; right: 16px; padding: 5px 10px; border-radius: 20px; color: #fff; background: #245fe0; font-size: 8px; font-weight: 800; letter-spacing: .8px; }
+.fp-package-label { display: flex; justify-content: space-between; margin-bottom: 16px; color: #80aaff; font-size: 9px; font-weight: 800; letter-spacing: 1.2px; }
+.fp-package-label span { color: #60718d; font-size: 12px; }
+.fp-package-card h3 { margin: 0 0 10px; color: #f3f6fc; font-size: 18px; line-height: 1.35; }
+.fp-package-intro { min-height: 62px; margin: 0; color: #aab6c9; font-size: 11px; line-height: 1.75; }
+.fp-list { display: grid; gap: 10px; margin: 17px 0 24px; padding: 0; list-style: none; }
+.fp-list li { position: relative; padding-left: 20px; color: #c6d0df; font-size: 11px; line-height: 1.55; }
+.fp-list li::before { position: absolute; left: 0; color: #52d6a0; content: "✓"; font-weight: 800; }
+.fp-text-link { display: inline-flex; gap: 8px; align-items: center; margin-top: auto; color: #8db4ff; font-size: 11px; font-weight: 800; text-decoration: none; }
+.fp-text-link:hover { color: #fff; }
+.fp-pricing-note { margin: 20px 0 0; color: #8997ad; text-align: center; font-size: 10px; line-height: 1.7; }
+.fp-process { max-width: 760px; margin: 0 auto; }
+.fp-process-step { display: flex; align-items: center; gap: 17px; padding: 16px 19px; border: 1px solid rgba(148,163,184,.17); border-radius: 12px; background: linear-gradient(100deg, #14213a, #101a2d); }
+.fp-process-step > span { display: grid; place-items: center; flex: 0 0 42px; width: 42px; height: 42px; border-radius: 11px; color: #9bbcff; background: rgba(79,140,255,.13); font-size: 12px; font-weight: 800; }
+.fp-process-step h3 { margin: 0 0 4px; color: #f0f4fb; font-size: 14px; }
+.fp-process-step p { margin: 0; color: #aab6c9; font-size: 11px; line-height: 1.65; }
+.fp-flow-arrow { height: 29px; color: #4f8cff; text-align: center; font-size: 19px; line-height: 29px; }
+.fp-security-note { max-width: 760px; margin: 22px auto 0; padding: 16px 19px; border: 1px solid rgba(82,214,160,.2); border-radius: 11px; color: #b9c9c8; background: rgba(82,214,160,.055); font-size: 11px; line-height: 1.75; }
+.fp-security-note strong { color: #e5f5ee; }
+.fp-metrics-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 14px; }
+.fp-metric-card { padding: 22px; }
+.fp-metric-icon { display: grid; place-items: center; width: 39px; height: 39px; margin-bottom: 15px; border-radius: 10px; color: #8db4ff; background: rgba(79,140,255,.12); font-size: 19px; font-weight: 700; }
+.fp-contact-section { padding-top: 65px; }
+.fp-contact-panel { display: grid; grid-template-columns: 1.3fr .7fr; align-items: center; gap: 35px; padding: clamp(25px, 5vw, 45px); border: 1px solid rgba(79,140,255,.3); border-radius: 19px; background: radial-gradient(ellipse at 90% 0%, rgba(37,99,235,.2), transparent 45%), linear-gradient(130deg, #14213a, #0e1729); }
+.fp-contact-panel h2 { max-width: 500px; margin: 5px 0 12px; color: #f4f7fc; font-size: clamp(25px, 3.5vw, 35px); line-height: 1.2; }
+.fp-contact-panel p { color: #aab6c9; font-size: 12px; line-height: 1.8; }
+.fp-contact-points { display: flex; flex-wrap: wrap; gap: 9px 18px; color: #c2cee0; font-size: 10px; }
+.fp-contact-points span::first-letter { color: #52d6a0; }
+.fp-contact-action { text-align: center; }
+.fp-contact-action .btn-premium { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 18px; border-radius: 8px; color: #fff; background: #245fe0; font-size: 11px; font-weight: 700; text-align: center; text-decoration: none; }
+.fp-contact-action .btn-premium:hover { background: #3478ff; }
+.fp-contact-action p { margin: 13px 0 5px; font-size: 11px; }
+.fp-contact-action p a { color: #8db4ff; }
+.fp-contact-action small { display: block; color: #7f8da3; font-size: 9px; line-height: 1.5; }
+@media (max-width: 980px) {
+  .fp-approach-grid { grid-template-columns: repeat(3, minmax(0,1fr)); }
+}
+@media (max-width: 760px) {
+  html { scroll-padding-top: 85px; }
+  .fp-section { padding: 60px 0; }
+  .fp-approach-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .fp-package-grid { grid-template-columns: 1fr; gap: 20px; }
+  .fp-package-intro { min-height: 0; }
+  .fp-metrics-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .fp-contact-panel { grid-template-columns: 1fr; gap: 24px; }
+  .fp-contact-action { text-align: left; }
+}
+@media (max-width: 460px) {
+  .fp-section { padding: 48px 0; }
+  .fp-section-nav { display: grid; grid-template-columns: 1fr 1fr; }
+  .fp-section-nav a { padding: 0 8px; font-size: 10px; }
+  .fp-approach-grid, .fp-metrics-grid { grid-template-columns: 1fr; }
+  .fp-approach-card { min-height: 0; }
+  .fp-process-step { align-items: flex-start; padding: 14px; gap: 12px; }
+  .fp-process-step > span { flex-basis: 36px; width: 36px; height: 36px; }
+  .fp-contact-panel { padding: 22px 18px; }
+  .fp-contact-action .btn-premium { width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: .01ms !important; }
+}
