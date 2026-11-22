@@ -1,0 +1,45 @@
+/* nCloudxel Kubernetes Consulting page — load after shared style.css */
+html { scroll-behavior: smooth; scroll-padding-top: 105px; }
+.k8s-section,.k8s-packages-section,.k8s-details-section,.k8s-process-section,.k8s-measure-section,.k8s-contact-strip{padding:68px 0;color:#e9eef8;background:#0a0f1c}
+.k8s-container{width:min(1160px,calc(100% - 40px));margin:0 auto}
+.k8s-heading{max-width:820px;margin:0 auto 34px;text-align:center}
+.k8s-eyebrow{display:inline-block;margin-bottom:10px;color:#a9c5ff;font-size:10px;font-weight:800;letter-spacing:1.5px}
+.k8s-heading h2,.k8s-detail-layout h2,.k8s-contact-inner h2{margin:0 0 12px;color:#f6f8fc;font-size:clamp(26px,4vw,36px);line-height:1.2}
+.k8s-heading p,.k8s-intro p,.k8s-capability p,.k8s-detail-layout p,.k8s-process-step p,.k8s-measure-item p,.k8s-contact-inner p{margin:0;color:#b4bfd0;font-size:13px;line-height:1.75}
+.k8s-intro{max-width:1000px;margin:0 auto 25px}
+.k8s-intro p{margin:5px 0}
+.k8s-intro strong{color:#e9eef8}
+.k8s-capabilities-title{margin:0 0 16px;color:#f6f8fc;font-size:20px}
+.k8s-capabilities{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px 28px}
+.k8s-capability h4{margin:0 0 5px;color:#f1f5fb;font-size:14px}
+.k8s-package-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.k8s-package-card{display:flex;min-height:285px;flex-direction:column;align-items:flex-start;padding:29px 26px 25px;border:1px solid rgba(255,255,255,.7);border-radius:17px;background:#2457ce;box-shadow:0 15px 35px rgba(0,0,0,.17);transition:transform .2s ease,box-shadow .2s ease,background .2s ease}
+.k8s-package-card:hover{transform:translateY(-5px);background:#2862df;box-shadow:0 20px 42px rgba(15,55,145,.28)}
+.k8s-package-number{margin-bottom:15px;color:rgba(255,255,255,.72);font-size:11px;font-weight:800;letter-spacing:1.4px}
+.k8s-package-card h3{margin:0 0 12px;color:#fff;font-size:21px;line-height:1.35}
+.k8s-package-card p{margin:0 0 20px;color:rgba(255,255,255,.95);font-size:13px;line-height:1.7}
+.k8s-package-button{display:inline-flex;align-items:center;gap:8px;min-height:39px;margin-top:auto;padding:0 14px;border:1px solid rgba(255,255,255,.65);border-radius:7px;color:#fff;background:rgba(5,24,78,.18);font-size:11px;font-weight:800;text-decoration:none}
+.k8s-package-button:hover,.k8s-package-button:focus-visible{color:#1746a8;background:#fff}
+.k8s-details-section{padding:55px 0;border-top:1px solid rgba(148,163,184,.12)}
+.k8s-details-alt{background:#0e1728}
+.k8s-detail-layout{display:grid;grid-template-columns:1fr 1fr;align-items:start;gap:45px}
+.k8s-detail-layout h2{font-size:clamp(23px,3vw,31px)}
+.k8s-deliverables{display:grid;gap:12px;margin:0;padding:0;list-style:none}
+.k8s-deliverables li{position:relative;padding:0 0 11px 24px;border-bottom:1px solid rgba(148,163,184,.12);color:#cbd5e3;font-size:12px;line-height:1.6}
+.k8s-deliverables li:before{position:absolute;left:0;color:#65d6a5;content:"✓";font-weight:800}
+.k8s-process-section{background:#0e1728}
+.k8s-process-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+.k8s-process-step,.k8s-measure-item{padding:21px;border:1px solid rgba(148,163,184,.18);border-radius:12px;background:#111d31}
+.k8s-process-step>span{display:inline-block;margin-bottom:10px;color:#78a7ff;font-size:12px;font-weight:800;letter-spacing:1px}
+.k8s-process-step h3,.k8s-measure-item h3{margin:0 0 8px;color:#f2f6fc;font-size:16px}
+.k8s-measure-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.k8s-measure-item{background:#0e1728}
+.k8s-contact-strip{padding:48px 0;background:#101b30}
+.k8s-contact-inner{display:flex;align-items:center;justify-content:space-between;gap:28px;padding:29px;border:1px solid rgba(79,140,255,.32);border-radius:15px;background:linear-gradient(120deg,#142b55,#101b30)}
+.k8s-contact-inner h2{font-size:clamp(22px,3vw,29px)}
+.k8s-contact-inner p{max-width:700px}
+.k8s-contact-button{display:inline-flex;flex:0 0 auto;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:0 17px;border-radius:7px;color:#fff;background:#245fe0;font-size:11px;font-weight:800;text-decoration:none}
+.k8s-contact-button:hover{background:#3478ff}
+@media(max-width:900px){.k8s-package-grid{grid-template-columns:1fr 1fr}.k8s-package-card:last-child{grid-column:1/-1}.k8s-process-grid,.k8s-measure-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.k8s-section,.k8s-packages-section,.k8s-details-section,.k8s-process-section,.k8s-measure-section{padding:48px 0}.k8s-container{width:min(100% - 30px,1160px)}.k8s-capabilities,.k8s-package-grid,.k8s-process-grid,.k8s-measure-grid{grid-template-columns:1fr}.k8s-package-card,.k8s-package-card:last-child{grid-column:auto;min-height:0;padding:24px 21px}.k8s-detail-layout{grid-template-columns:1fr;gap:22px}.k8s-contact-inner{align-items:flex-start;flex-direction:column;padding:22px 19px}.k8s-contact-button{width:100%}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.k8s-package-card{transition:none}}
