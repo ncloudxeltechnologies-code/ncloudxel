@@ -1,0 +1,90 @@
+/* DevSecOps page styles. Load after assets/css/style.css.
+   ds- prefixed selectors keep page styling isolated from other pages. */
+html { scroll-behavior: smooth; scroll-padding-top: 110px; }
+.ds-section { padding: 76px 0; color: #e8edf7; background: #0a0f1c; }
+.ds-section-alt { background: #0e1627; border-top: 1px solid rgba(148,163,184,.10); border-bottom: 1px solid rgba(148,163,184,.10); }
+.ds-existing-hero { overflow: hidden; }
+.ds-existing-hero img { display: block; max-width: 100%; }
+.ds-heading { max-width: 920px; margin: 0 auto; text-align: center; }
+.ds-eyebrow { display: inline-block; margin-bottom: 10px; color: #78a6ff; font-size: 10px; font-weight: 800; letter-spacing: 1.8px; text-transform: uppercase; }
+.ds-heading h1 { margin: 0 0 14px; color: #f5f7fb; font-size: clamp(29px, 4.2vw, 43px); line-height: 1.16; letter-spacing: -1.3px; }
+.ds-subtitle { max-width: 820px; margin: 0 auto 15px; color: #c5d0e0; font-size: 17px; line-height: 1.6; }
+.ds-intro-copy { max-width: 870px; margin: 0 auto; color: #aab6c9; font-size: 13px; line-height: 1.85; }
+.ds-section-nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin: 30px auto 0; }
+.ds-section-nav a { display: inline-flex; align-items: center; justify-content: center; min-height: 42px; padding: 0 17px; border: 1px solid rgba(79,140,255,.38); border-radius: 8px; color: #eaf1ff; background: rgba(37,99,235,.14); font-size: 11px; font-weight: 700; text-decoration: none; transition: background .2s ease, transform .2s ease; }
+.ds-section-nav a:hover, .ds-section-nav a:focus-visible { background: #245fe0; transform: translateY(-2px); }
+.ds-value-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 25px; margin-top: 24px; color: #aebbd0; font-size: 11px; }
+.ds-tick { margin-right: 5px; color: #52d6a0; font-weight: 800; }
+.ds-section-heading { max-width: 770px; margin: 0 auto 38px; text-align: center; }
+.ds-section-heading h2 { margin: 0 0 12px; color: #f4f7fc; font-size: clamp(27px, 3.8vw, 37px); line-height: 1.2; letter-spacing: -1px; }
+.ds-section-heading p { margin: 0; color: #aab6c9; font-size: 13px; line-height: 1.8; }
+.ds-approach-grid { display: grid; grid-template-columns: repeat(5, minmax(0,1fr)); gap: 13px; }
+.ds-card { border: 1px solid rgba(148,163,184,.17); border-radius: 15px; background: linear-gradient(155deg, #14213a, #101a2d); }
+.ds-approach-card { min-height: 190px; padding: 20px 17px; }
+.ds-step-badge { display: inline-grid; place-items: center; width: 38px; height: 38px; margin-bottom: 17px; border: 1px solid rgba(79,140,255,.3); border-radius: 10px; color: #8db4ff; background: rgba(79,140,255,.12); font-size: 11px; font-weight: 800; }
+.ds-approach-card h3, .ds-metric-card h3 { margin: 0 0 8px; color: #f0f4fb; font-size: 15px; }
+.ds-approach-card p, .ds-metric-card p { margin: 0; color: #aab6c9; font-size: 11px; line-height: 1.75; }
+.ds-note { margin-top: 22px; padding: 16px 19px; border: 1px solid rgba(79,140,255,.23); border-radius: 11px; color: #c2cee0; background: rgba(37,99,235,.08); font-size: 12px; line-height: 1.7; }
+.ds-note strong { color: #f0f5ff; }
+.ds-package-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); align-items: stretch; gap: 17px; }
+.ds-package-card { position: relative; display: flex; flex-direction: column; padding: 25px 23px; }
+.ds-package-featured { border-color: rgba(79,140,255,.65); box-shadow: 0 14px 40px rgba(20,75,190,.13); }
+.ds-featured-tag { position: absolute; top: -11px; right: 16px; padding: 5px 10px; border-radius: 20px; color: #fff; background: #245fe0; font-size: 8px; font-weight: 800; letter-spacing: .8px; }
+.ds-package-label { display: flex; justify-content: space-between; margin-bottom: 16px; color: #80aaff; font-size: 9px; font-weight: 800; letter-spacing: 1.2px; }
+.ds-package-label span { color: #60718d; font-size: 12px; }
+.ds-package-card h3 { margin: 0 0 10px; color: #f3f6fc; font-size: 18px; line-height: 1.35; }
+.ds-package-intro { min-height: 62px; margin: 0; color: #aab6c9; font-size: 11px; line-height: 1.75; }
+.ds-list { display: grid; gap: 10px; margin: 17px 0 24px; padding: 0; list-style: none; }
+.ds-list li { position: relative; padding-left: 20px; color: #c6d0df; font-size: 11px; line-height: 1.55; }
+.ds-list li::before { position: absolute; left: 0; color: #52d6a0; content: "✓"; font-weight: 800; }
+.ds-text-link { display: inline-flex; gap: 8px; align-items: center; margin-top: auto; color: #8db4ff; font-size: 11px; font-weight: 800; text-decoration: none; }
+.ds-text-link:hover { color: #fff; }
+.ds-pricing-note { margin: 20px 0 0; color: #8997ad; text-align: center; font-size: 10px; line-height: 1.7; }
+.ds-process { max-width: 800px; margin: 0 auto; }
+.ds-process-step { display: flex; align-items: center; gap: 17px; padding: 16px 19px; border: 1px solid rgba(148,163,184,.17); border-radius: 12px; background: linear-gradient(100deg, #14213a, #101a2d); }
+.ds-process-step > span { display: grid; place-items: center; flex: 0 0 42px; width: 42px; height: 42px; border-radius: 11px; color: #9bbcff; background: rgba(79,140,255,.13); font-size: 12px; font-weight: 800; }
+.ds-process-step h3 { margin: 0 0 4px; color: #f0f4fb; font-size: 14px; }
+.ds-process-step p { margin: 0; color: #aab6c9; font-size: 11px; line-height: 1.65; }
+.ds-flow-arrow { height: 29px; color: #4f8cff; text-align: center; font-size: 19px; line-height: 29px; }
+.ds-security-note { max-width: 800px; margin: 22px auto 0; padding: 16px 19px; border: 1px solid rgba(248,185,78,.2); border-radius: 11px; color: #c9c3b5; background: rgba(248,185,78,.055); font-size: 11px; line-height: 1.75; }
+.ds-security-note strong { color: #fff0d3; }
+.ds-metrics-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 14px; }
+.ds-metric-card { padding: 22px; }
+.ds-metric-icon { display: grid; place-items: center; width: 39px; height: 39px; margin-bottom: 15px; border-radius: 10px; color: #8db4ff; background: rgba(79,140,255,.12); font-size: 19px; font-weight: 700; }
+.ds-contact-section { padding-top: 65px; }
+.ds-contact-panel { display: grid; grid-template-columns: 1.3fr .7fr; align-items: center; gap: 35px; padding: clamp(25px, 5vw, 45px); border: 1px solid rgba(79,140,255,.3); border-radius: 19px; background: radial-gradient(ellipse at 90% 0%, rgba(37,99,235,.2), transparent 45%), linear-gradient(130deg, #14213a, #0e1729); }
+.ds-contact-panel h2 { max-width: 520px; margin: 5px 0 12px; color: #f4f7fc; font-size: clamp(25px, 3.5vw, 35px); line-height: 1.2; }
+.ds-contact-panel p { color: #aab6c9; font-size: 12px; line-height: 1.8; }
+.ds-contact-points { display: flex; flex-wrap: wrap; gap: 9px 18px; color: #c2cee0; font-size: 10px; }
+.ds-contact-action { text-align: center; }
+.ds-contact-action .btn-premium { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 18px; border-radius: 8px; color: #fff; background: #245fe0; font-size: 11px; font-weight: 700; text-align: center; text-decoration: none; }
+.ds-contact-action .btn-premium:hover { background: #3478ff; }
+.ds-contact-action p { margin: 13px 0 5px; font-size: 11px; }
+.ds-contact-action p a { color: #8db4ff; }
+.ds-contact-action small { display: block; color: #7f8da3; font-size: 9px; line-height: 1.5; }
+@media (max-width: 980px) { .ds-approach-grid { grid-template-columns: repeat(3, minmax(0,1fr)); } }
+@media (max-width: 760px) {
+  html { scroll-padding-top: 85px; }
+  .ds-section { padding: 60px 0; }
+  .ds-approach-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .ds-package-grid { grid-template-columns: 1fr; gap: 20px; }
+  .ds-package-intro { min-height: 0; }
+  .ds-metrics-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .ds-contact-panel { grid-template-columns: 1fr; gap: 24px; }
+  .ds-contact-action { text-align: left; }
+}
+@media (max-width: 460px) {
+  .ds-section { padding: 48px 0; }
+  .ds-section-nav { display: grid; grid-template-columns: 1fr 1fr; }
+  .ds-section-nav a { padding: 0 8px; font-size: 10px; }
+  .ds-approach-grid, .ds-metrics-grid { grid-template-columns: 1fr; }
+  .ds-approach-card { min-height: 0; }
+  .ds-process-step { align-items: flex-start; padding: 14px; gap: 12px; }
+  .ds-process-step > span { flex-basis: 36px; width: 36px; height: 36px; }
+  .ds-contact-panel { padding: 22px 18px; }
+  .ds-contact-action .btn-premium { width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: .01ms !important; }
+}
